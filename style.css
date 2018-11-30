@@ -1,24 +1,84 @@
-/* Navigation Bar */
-ul {
-    list-style-type: none;
+body {
+    font-family: 'Raleway', sans-serif;
+    background: rgba(242, 242, 242, .6);
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
+  }
+  
+  * {
+    box-sizing: border-box
+  }
+  
+  /*NAVBAR*/
+  .navbar {
+    background-color: #3a13e9;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    font-weight: 200;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
+  }
+  
+  .anchor {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+  }
 
-li a:hover {
-    background-color: blue;
-}
+
+  /*CONTENT*/
+.container {
+    /*sets up flexbox*/
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .white {
+    background: rgb(253, 253, 253);
+  }
+  
+  .side-content {
+    flex: 0 0 16.6%;
+  }
+  
+  .main-content {
+    flex: 0 0 66.6%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .side-content-sm {
+    flex: 0 0 10%;
+  }
+  
+  .main-content-lg {
+    flex: 0 0 80%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  
+  h2 {
+    font-weight: 200;
+    font-size: 2rem;
+    color: #31b0d5;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .content-body {
+    line-height: 1.5;
+    color: rgba(0,0,0,.75);
+  }
+  
